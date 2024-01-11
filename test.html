@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+.interest-form-container {
+    background-color: #e0ffe0; /* Light green background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    max-width: 600px; /* Maximum width of the form container */
+    margin: auto; /* Center the box */
+    font-family: Arial, sans-serif; /* Arial font */
+}
+
+.interest-form-container h2, .interest-form-container p {
+    text-align: center; /* Center the text */
+}
+
+.interest-form-container form {
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+}
+
+.interest-form-container label {
+    margin-top: 10px; /* Space above each label */
+}
+
+.interest-form-container input[type="text"],
+.interest-form-container input[type="email"],
+.interest-form-container input[type="tel"],
+.interest-form-container textarea {
+    padding: 10px; /* Padding inside the input fields */
+    margin-top: 5px; /* Space above each input field */
+    border: 1px solid #ccc; /* Border around the input fields */
+    border-radius: 5px; /* Slightly rounded corners for the input fields */
+}
+
+.interest-form-container input[type="submit"] {
+    background-color: #0b4426; /* Dark green background for the submit button */
+    color: white; /* White text for the submit button */
+    padding: 10px 15px; /* Padding inside the submit button */
+    border: none; /* No border for the submit button */
+    border-radius: 5px; /* Rounded corners for the submit button */
+    margin-top: 15px; /* Space above the submit button */
+    cursor: pointer; /* Cursor to indicate the submit button is clickable */
+}
+
+.interest-form-container input[type="submit"]:hover {
+    background-color: #0a3c24; /* Darker green background for the submit button on hover */
+}
+/* Existing styles ... */
+
+.interest-form-container select {
+    padding: 10px; /* Padding inside the select dropdown */
+    margin-top: 5px; /* Space above each select dropdown */
+    border: 1px solid #ccc; /* Border around the select dropdowns */
+    border-radius: 5px; /* Rounded corners for the select dropdowns */
+    background-color: white; /* Background color for the select dropdowns */
+}
+
+/* ... rest of your existing styles ... */
+
+
+
+    </style>
+    
+    
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="interest-form-container">
+        <h2>Interested in Our Apartments?</h2>
+        <p>Please fill out the application form below:</p>
+        <form action="submit-application.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="dob-year">Year:</label>
+            <select id="dob-year" name="dob-year" required>
+            </select>
+
+            <label for="dob-month">Month:</label>
+            <select id="dob-month" name="dob-month" required>
+
+            <!-- JavaScript will populate this with month options -->
+            </select>
+
+
+
+            <label for="dob-day">Day:</label>
+            <select id="dob-day" name="dob-day" required>
+                                                    <!-- Options for day will go here -->
+            </select>
+
+
+
+            <!-- ... other form fields below ... -->
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+    
+            <input type="submit" value="Apply Now">
+        </form>
+    </div>
+    
+
+    <script>
+        // JavaScript to generate the year dropdown options
+        const currentYear = new Date().getFullYear();
+        const yearSelect = document.getElementById('dob-year');
+        for (let year = currentYear; year >= currentYear - 100; year--) {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            yearSelect.appendChild(option);
+        }
+    
+        // JavaScript to generate the day dropdown options
+        const daySelect = document.getElementById('dob-day');
+        for (let day = 1; day <= 31; day++) {
+            const option = document.createElement('option');
+            option.value = day;
+            option.textContent = day;
+            daySelect.appendChild(option);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const monthSelect = document.getElementById('dob-month');
+    
+    // Clear existing options
+    monthSelect.innerHTML = '';
+    
+    const months = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+
+    // Add a default disabled option
+    const defaultOption = document.createElement('option');
+    defaultOption.textContent = "Select a month";
+    defaultOption.disabled = true;
+    defaultOption.selected = true;
+    monthSelect.appendChild(defaultOption);
+
+    // Append each month as an option
+    months.forEach((month, index) => {
+        const option = document.createElement('option');
+        option.value = index + 1; // Month value is 1-indexed (1 = January, 2 = February, etc.)
+        option.textContent = month;
+        monthSelect.appendChild(option);
+    });
+});
+
+
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1b9135;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 3rem; /* Large font size for the main title */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 15px 0px 0px 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.apartment-listings {
+    margin: 2em;
+    padding: 1em;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    grid-gap: 20px; /* Space between the grid items */
+    margin: 20px; /* Adjust as needed */
+}
+
+.apartment {
+    display: flex; /* Aligns the image and the info side-by-side */
+    align-items: center; /* Centers the items vertically */
+    margin-bottom: 20px; /* Adds space between each apartment listing */
+}
+
+.apartment-img {
+    max-width: 300px; /* Maximum width of the image */
+    max-height: 200px; /* Maximum height of the image */
+    width: auto; /* Maintains the aspect ratio */
+    height: auto; /* Maintains the aspect ratio */
+    margin-right: 20px; /* Adds space between the image and the info */
+    border-radius: 15px;
+}
+
+.apartment-info {
+    flex-grow: 1; /* Allows the info section to take up the remaining space */
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #1b9135;
+    color: white;
+}
+
+button {
+    background-color: #964B00;
+    color: rgb(211, 3, 3);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;    }button {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(98, 255, 0, 0.2);}button {
+    background-color: #178a1d;
+    color: #000000;}button {
+    animation: moveInBottom .5s ease-out;
+    animation-fill-mode: backwards;}@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);} 100% {opacity: 1; transform: translateY(0px); }}button:hover {background-color: #8fdd7e;}
+</style>
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Sales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Listings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Listings</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="apartment-listings">
+        <article class="apartment">
+            <img src="90210 Lofts/front90210.png" class="apartment-img">
+            <div class="apartment-info">
+                <h2>90210 Lofts</h2>
+                <p>1 bed, 1 bath, 550 sqft - $745 / month</p>
+                
+                <a href="90210 Lofts.html"><button>More Details</button></a>
+            
+            </div>
+        </article>
+        
+
+        <article class="apartment">
+            <img src="Astroworld Residences/Astroworld Residences.png"  class="apartment-img">
+            <div class="apartment-info">
+                <h2>Astroworld Residences</h2>
+                <p>2 bed, 1 bath,  900sqft - $1100 /    month</p>
+                <a href="Astroworld Residences.html"><button>More Details</button></a>
+            </div>
+        </article>
+
+        <article class="apartment">
+            <img src="Cactus Jack Corner/Cactus Jack Lofts.png"  class="apartment-img">
+            <div class="apartment-info">
+                <h2>Cactus Jack Corners</h2>
+                <p>2 bed, 2 bath,  1120sqft - $1400 /    month</p>
+                <a href="Cactus Jack Corners.html"><button>More Details</button></a>
+            </div>
+        </article>
+
+
+        <article class="apartment">
+            <img src="Rodeo Towers/rodeao towers.png"  class="apartment-img">
+            <div class="apartment-info">
+                <h2>Rodeo Towers</h2>
+                <p>2 bed, 1 bath,  680sqft - $850 /    month</p>
+                <a href="Rodeo Towers.html"><button>More Details</button></a>
+            </div>
+        </article>
+
+
+    
+        
+
+        
+
+        <!-- More listings can be added here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Apartment Sales. All rights reserved.</p>
+    </footer>
+</body>
+</html>
