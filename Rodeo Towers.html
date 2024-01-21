@@ -9,296 +9,301 @@ CSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCS
 CSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSS
 CSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSS
 -->
-    <style>
+<style>
 
         
-        * {
-            box-sizing: border-box;
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    .header {
+        padding: 30px;
+        text-align: center;
+        background: #43766C;
+        color: white;
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #76453B;
+    }
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .leftcolumn {
+        float: left;
+        width: 70%;
+        background-color: #B19470;
+        color: white;
+        
+    }
+    .rightcolumn {
+        float: left;
+        width: 30%;
+        background-color: #76453B;
+        padding: 0px 20px 20px 20px;
+        margin-bottom: 50px;
+    }
+    /* this effects all the light green boxes in the right coloumb */
+    .card {
+        background-color: #43766C;
+        padding: 20px;
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+            width: 100%;
+            padding: 0; 
         }
-        body {
-            font-family: Arial;
-            padding: 0;
-            margin: 0;
-            height: 100vh;
-            overflow-x: hidden;
-        }
-        .header {
-            padding: 30px;
-            text-align: center;
-            background: rgb(15, 161, 47);
-            color: white;
-        }
-        .header h1 {
-            font-size: 50px;
-        }
-        .topnav {
-            overflow: hidden;
-            background-color: #0b4426;
-        }
+    }
+    @media screen and (max-width: 400px) {
         .topnav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+            float: none;
+            width: 100%;
         }
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .leftcolumn {
-            float: left;
-            width: 70%;
-            background-color: white;
-        }
-        .rightcolumn {
-            float: left;
-            width: 30%;
-            background-color: #0b4426;
-            padding: 0px 20px 20px 20px;
-        }
-        /* this effects all the light green boxes in the right coloumb */
-        .card {
-            background-color: rgb(15, 161, 47);
-            padding: 20px;
-            margin-top: 20px;
-            color: rgb(255, 255, 255);
-            border-radius: 10px;
-    
-        }
-        .row::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    
-
-        @media screen and (max-width: 800px) {
-            .leftcolumn, .rightcolumn {
-                width: 100%;
-                padding: 0; 
-            }
-        }
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
-                width: 100%;
-            }
 
 
-            /* everything inside the other apartments scrollable menu*/
-        }
-        .menu-container {
-            width: 100%;
-            height: 500px;
-            overflow-y: auto;
-            border: 1px solid #0b4426;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            text-decoration: none;
-            
-        }
-        .ApartmentA {
-            width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-            padding-left: 20px;
-            box-sizing: border-box;
-        }
-        .responsive-img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .scroll-menu {
-            list-style: none;
-            padding: 0 ;
-            margin: 0;
-            width: 100%;
-        }
-        .menu-section {
-            border-bottom: 1px solid #0b4426;
-            padding: 10px;
-        }
+        /* everything inside the other apartments scrollable menu*/
+    }
+    .menu-container {
+        width: 100%;
+        height: 500px;
+        overflow-y: auto;
+        border: 2px solid #081b11;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        text-decoration: none;
+        
+    }
+    .ApartmentA {
+        width: 100%;
+        height: auto;
+       
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    .responsive-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .scroll-menu {
+        list-style: none;
+        padding: 0 ;
+        margin: 0;
+        width: 100%;
+    }
+    .menu-section {
+        border-bottom: 2px solid #110e0d;
+        padding: 10px;
+    }
 
-        /* Words inside Other */
-        .menu-section h3 {
-            margin-top: 0;
-            color: #ffffff;
-        }
-        /* Other Apartments */
-        .menu-section img {
-            max-width: 50%;
-            height: auto;
-            margin-bottom:0px;
-            border-radius: 10px;
-        }
-        .menu-section p {
-            color: #ffffff;
-            font-size: 0.9em;
-        }
-        .map-container {
-            margin: 20px auto;
-            box-shadow: 0 0 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            max-width: 100%;
-        }
-        .map-container iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-        }
-        .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-        }
-        .mySlides {
-            display: none;
-        }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
-        }
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        .active, .dot:hover {
-            background-color: #717171;
-        }
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            margin: 10px auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 970px;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 10px;
-        }
-        .header .icon {
-            width: 24px;
-            height: 24px;
-            background-color: #5a4825;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 5px;
-        }
-        .header h2 {
-            margin: 0;
-            display: inline-block;
-            font-size: 20px;
-            vertical-align: middle;
-        }
-        .content {
-            padding: 20px 0;
-        }
-        .listing-description {
-            font-size: 16px;
-            line-height: 1.5;
-            border-bottom: 1px solid #000000;
-            padding-bottom: 20px;
-        }
-        .property-summary {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            padding-top: 20px;
-        }
-        .property-summary .property-item {
-            font-size: 14px;
-        }
-        .property-summary .property-item h4 {
-            font-size: 16px;
-            color: #666;
-            margin: 0 0 5px;
-        }
-        .property-summary .property-item span {
-            display: block;
-            color: #333;
-        }
-        .property-details {
-            background-color: #fff;
-            max-width: 970px;
-            margin: 0 auto;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .section h3 {
-            color: #000000;
-            margin-bottom: 10px;
-        }
-        .section p {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #000000;
-            padding: 10px 0;
-        }
-        .section p strong {
-            font-weight: bold;
-        }
-        .section p span {
-            margin-left: 15px;
-        }
+    /* Words inside Other */
+    .menu-section h3 {
+        margin-top: 0;
+        color: #ffffff;
+    }
+    /* Other Apartments */
+    .menu-section img {
+        max-width: 50%;
+        height: auto;
+        margin-bottom:0px;
+        border-radius: 10px;
+    }
+    .menu-section p {
+        color: #ffffff;
+        font-size: 0.9em;
+    }
+    .map-container {
+        margin: 20px auto;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+    }
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    .mySlides {
+        display: none;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    .container {
+        background-color: #F8FAE5;
+        padding: 20px;
+        margin: 10px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 970px;
+        color: black;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .header .icon {
+        width: 24px;
+        height: 24px;
+        background-color: #76453B;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .header h2 {
+        margin: 0;
+        display: inline-block;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+    .content {
+        padding: 20px 0;
+    }
+    .listing-description {
+        font-size: 16px;
+        line-height: 1.5;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 20px;
+        color: black;
+    }
+    .property-summary {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding-top: 20px;
+    }
+    .property-summary .property-item {
+        font-size: 14px;
+    }
+    .property-summary .property-item h4 {
+        font-size: 16px;
+        color: #666;
+        margin: 0 0 5px;
+    }
+    .property-summary .property-item span {
+        display: block;
+        color: #333;
+    }
+    .property-details {
+        background-color: #F8FAE5;
+        max-width: 970px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        color: black;
+    }
+    .section h3 {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .section p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #000000;
+        padding: 10px 0;
+    }
+    .section p strong {
+        font-weight: bold;
+    }
+    .section p span {
+        margin-left: 15px;
+    }
 
-        .menu-section a {
-    text-decoration: none;  /* Removes the underline */
-    color: inherit;         /* Optional: Makes the link color inherit from the parent */
+    .menu-section a {
+text-decoration: none;  /* Removes the underline */
+color: inherit;         /* Optional: Makes the link color inherit from the parent */
 
 }
 
@@ -307,170 +312,170 @@ CSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCS
 /* Words inside Exploring other apartment tabs*/ 
 
 .menu-section {
-    font-family:Arial, Helvetica, sans-serif;
-    list-style: none; /* Removes default list styling if this is part of an unordered list */
+font-family:Arial, Helvetica, sans-serif;
+list-style: none; /* Removes default list styling if this is part of an unordered list */
 }
 
 .menu-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none; /* Removes the underline from the link */
+display: flex;
+align-items: center;
+text-decoration: none; /* Removes the underline from the link */
 }
 
 .menu-image {
-    width: auto; /* Adjust width as needed */
-    max-width: 100px; /* Example size, adjust as needed */
-    height: auto;
-    margin-right: 20px; /* Space between image and text */
+width: auto; /* Adjust width as needed */
+max-width: 100px; /* Example size, adjust as needed */
+height: auto;
+margin-right: 20px; /* Space between image and text */
 }
 
 .menu-details {
-    flex-grow: 1;
+flex-grow: 1;
 }
 
 .menu-features {
-    list-style: none; /* Removes default list styling */
-    padding: 0;
-    margin: 0;
+list-style: none; /* Removes default list styling */
+padding: 0;
+margin: 0;
 }
 
 .menu-features li {
-    margin-bottom: 10px; /* Space between list items */
+margin-bottom: 10px; /* Space between list items */
 }
 
 .menu-features li::before {
-    padding-top: 5px;
-    content: '• '; /* Unicode character for the bullet point */
-    color: #0b4426; /* Example color, adjust as needed */
-    font-weight: bold; /* Makes the bullet point bold */
-    display: inline-block; /* Needed to add content before the list item */
-    width: 1em; /* Space between the bullet point and the text */
-    margin-left: -1em; /* Aligns bullet with the text start if list-style is none */
+padding-top: 5px;
+content: '• '; /* Unicode character for the bullet point */
+color: #0b4426; /* Example color, adjust as needed */
+font-weight: bold; /* Makes the bullet point bold */
+display: inline-block; /* Needed to add content before the list item */
+width: 1em; /* Space between the bullet point and the text */
+margin-left: -1em; /* Aligns bullet with the text start if list-style is none */
 }
 
 /*APPLICATION MENU THING */
 
 .interest-form-container {
-    background-color: #e0ffe0; /* Light green background */
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Padding around the content */
-    max-width: 600px; /* Maximum width of the form container */
-    margin: auto; /* Center the box */
-    font-family: Arial, sans-serif; /* Arial font */
+background-color: #afc012; /* Light green background */
+border-radius: 15px; /* Rounded corners */
+padding: 20px; /* Padding around the content */
+max-width: 600px; /* Maximum width of the form container */
+margin: auto; /* Center the box */
+font-family: Arial, sans-serif; /* Arial font */
 }
 
 .interest-form-container h2, .interest-form-container p {
-    text-align: center; /* Center the text */
+text-align: center; /* Center the text */
 }
 
 .interest-form-container form {
-    display: flex;
-    flex-direction: column; /* Stack form fields vertically */
+display: flex;
+flex-direction: column; /* Stack form fields vertically */
 }
 
 .interest-form-container label {
-    margin-top: 10px; /* Space above each label */
+margin-top: 10px; /* Space above each label */
 }
 
 .interest-form-container input[type="text"],
 .interest-form-container input[type="email"],
 .interest-form-container input[type="tel"],
 .interest-form-container textarea {
-    padding: 10px; /* Padding inside the input fields */
-    margin-top: 5px; /* Space above each input field */
-    border: 1px solid #ccc; /* Border around the input fields */
-    border-radius: 5px; /* Slightly rounded corners for the input fields */
+padding: 10px; /* Padding inside the input fields */
+margin-top: 5px; /* Space above each input field */
+border: 1px solid #ccc; /* Border around the input fields */
+border-radius: 5px; /* Slightly rounded corners for the input fields */
 }
 
 .interest-form-container input[type="submit"] {
-    background-color: #0b4426; /* Dark green background for the submit button */
-    color: white; /* White text for the submit button */
-    padding: 10px 15px; /* Padding inside the submit button */
-    border: none; /* No border for the submit button */
-    border-radius: 5px; /* Rounded corners for the submit button */
-    margin-top: 15px; /* Space above the submit button */
-    cursor: pointer; /* Cursor to indicate the submit button is clickable */
+background-color: #2a302d; /* Dark green background for the submit button */
+color: white; /* White text for the submit button */
+padding: 10px 15px; /* Padding inside the submit button */
+border: none; /* No border for the submit button */
+border-radius: 5px; /* Rounded corners for the submit button */
+margin-top: 15px; /* Space above the submit button */
+cursor: pointer; /* Cursor to indicate the submit button is clickable */
 }
 
 .interest-form-container input[type="submit"]:hover {
-    background-color: #0a3c24; /* Darker green background for the submit button on hover */
+background-color: #0a3c24; /* Darker green background for the submit button on hover */
 }
 
 .interest-form-container {
-    background-color: #e0ffe0; /* Light green background */
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Padding around the content */
-    max-width: 600px; /* Maximum width of the form container */
-    margin: auto; /* Center the box */
-    font-family: Arial, sans-serif; /* Arial font */
+background-color: #F8FAE5; /* Light green background */
+border-radius: 15px; /* Rounded corners */
+padding: 20px; /* Padding around the content */
+max-width: 600px; /* Maximum width of the form container */
+margin: auto; /* Center the box */
+font-family: Arial, sans-serif; /* Arial font */
 }
 
 .interest-form-container h2, .interest-form-container p {
-    text-align: center; /* Center the text */
+text-align: center; /* Center the text */
 }
 
 .interest-form-container form {
-    display: flex;
-    flex-direction: column; /* Stack form fields vertically */
+display: flex;
+flex-direction: column; /* Stack form fields vertically */
 }
 
 .interest-form-container label {
-    margin-top: 10px; /* Space above each label */
+margin-top: 10px; /* Space above each label */
 }
 
 .interest-form-container input[type="text"],
 .interest-form-container input[type="email"],
 .interest-form-container input[type="tel"],
 .interest-form-container textarea {
-    padding: 10px; /* Padding inside the input fields */
-    margin-top: 5px; /* Space above each input field */
-    border: 1px solid #ccc; /* Border around the input fields */
-    border-radius: 5px; /* Slightly rounded corners for the input fields */
+padding: 10px; /* Padding inside the input fields */
+margin-top: 5px; /* Space above each input field */
+border: 1px solid #ccc; /* Border around the input fields */
+border-radius: 5px; /* Slightly rounded corners for the input fields */
 }
 
 .interest-form-container input[type="submit"] {
-    background-color: #0b4426; /* Dark green background for the submit button */
-    color: white; /* White text for the submit button */
-    padding: 10px 15px; /* Padding inside the submit button */
-    border: none; /* No border for the submit button */
-    border-radius: 5px; /* Rounded corners for the submit button */
-    margin-top: 15px; /* Space above the submit button */
-    cursor: pointer; /* Cursor to indicate the submit button is clickable */
+background-color: #76453B; /* Dark green background for the submit button */
+color: white; /* White text for the submit button */
+padding: 10px 15px; /* Padding inside the submit button */
+border: none; /* No border for the submit button */
+border-radius: 5px; /* Rounded corners for the submit button */
+margin-top: 15px; /* Space above the submit button */
+cursor: pointer; /* Cursor to indicate the submit button is clickable */
 }
 
 .interest-form-container input[type="submit"]:hover {
-    background-color: #0a3c24; /* Darker green background for the submit button on hover */
+background-color: #36201b; /* Darker green background for the submit button on hover */
 }
 /* Existing styles ... */
 
 .interest-form-container select {
-    padding: 10px; /* Padding inside the select dropdown */
-    margin-top: 5px; /* Space above each select dropdown */
-    border: 1px solid #ccc; /* Border around the select dropdowns */
-    border-radius: 5px; /* Rounded corners for the select dropdowns */
-    background-color: white; /* Background color for the select dropdowns */
+padding: 10px; /* Padding inside the select dropdown */
+margin-top: 5px; /* Space above each select dropdown */
+border: 1px solid #ccc; /* Border around the select dropdowns */
+border-radius: 5px; /* Rounded corners for the select dropdowns */
+background-color: white; /* Background color for the select dropdowns */
 }
 
 /* Footer Styles */
 footer {
-    width: 100%; /* Full width of the viewport */
-    background-color: #0b4426; /* Background color of the footer */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    padding: 10px 0px 20px 0px; /* Padding inside the footer */
-    left: 0; /* Align to the left edge */
+width: 100%; /* Full width of the viewport */
+background-color: #43766C; /* Background color of the footer */
+color: white; /* Text color */
+text-align: center; /* Center the text */
+padding: 10px 0px 20px 0px; /* Padding inside the footer */
+left: 0; /* Align to the left edge */
 }
 
 /* Clear floats before the footer if any floats are used in the content */
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+content: "";
+display: table;
+clear: both;
 }
 
 
 
-    </style>
+</style>
 
 <!---CSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSS
 CSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSSCSS

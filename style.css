@@ -1,0 +1,273 @@
+
+*{
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/08/29/15/toronto-skyline.jpg)
+
+
+
+}
+
+.Titleheading {
+    /* Style your header */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 1px 0px 40px 0px;
+    font-size: larger;
+    height: 60px;
+    background-color: #2e524a;
+    color: rgb(255, 255, 255);
+    
+}
+
+.MainNav{
+    text-align: center;
+    background-color: #76453B;
+    border: 1px solid #311d18;
+}
+
+.MainNav li{
+display: inline;
+padding: 0 5%;
+}
+
+.MainNav a{
+text-decoration: none;
+display: inline-block;
+padding: 20px;
+font-size: 1.1em;
+font-weight: lighter;
+color: white;
+
+}
+
+.MainNav a:hover{
+    background: lightgrey;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); /* Height minus the header height */
+    overflow: hidden;
+
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    display: none;
+
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+.betweenslideandtoronto{
+
+border: 4px solid#311d18;
+}
+
+/*===============================================================================================================================================================================================
+============================================================================================================================================================================================v===============================================
+=============================================================================================================================================
+=============================================================================================================================================*/
+
+.paragraph1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensures items stretch to fill the container */
+    justify-content: left;
+
+   
+}
+
+.overview-image {
+    flex-basis: calc(60% - 3%); /* Image takes 70% width minus some margin */
+    max-width: calc(60% - 3%); /* Ensures max width is also the same */
+    margin:3%; 
+    border-radius: 10px;
+    height: fit-content; /* Adjusts height to maintain aspect ratio */
+    overflow: hidden;
+    object-fit: cover;
+    border: 4px solid #311d18;
+}
+
+.overview-image2{
+
+    flex-basis: calc(60% - 3%); /* Image takes 70% width minus some margin */
+    max-width: calc(60% - 3%); /* Ensures max width is also the same */
+    margin:3%; 
+    border-radius: 10px;
+    height: fit-content; /* Adjusts height to maintain aspect ratio */
+    overflow: hidden;
+    object-fit: cover;
+    border: 4px solid #311d18;
+
+
+}
+
+.Overview {
+    flex-basis: calc(30% - 3%); /* Text section takes 30% width minus some margin */
+    max-width: calc(30% - 3%); /* Ensures max width is also the same */
+    margin: 3%;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    background-color: #2e524a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   
+
+    /* Keep the rest of your .Overview styles */
+}
+
+.Overview:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.Overview h2 {
+    color: #f8f8f8; /* Brighter color for more contrast */
+    margin-bottom: 10px;
+    font-weight: 600; /* Make the header bold */
+}
+
+.Overview p {
+    color: #e0e0e0; /* Slightly brighter text color */
+    line-height: 1.6;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*===============================================================================================================================================================================================
+============================================================================================================================================================================================v===============================================
+=============================================================================================================================================
+=============================================================================================================================================*/
+
+
+.paragraph2 {
+    display: flex;
+    flex-wrap: wrap;
+   /* Justify content to the end to align items to the right */
+}
+
+.Research:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.Research {
+    flex-basis: calc(30% - 3%); /* Text section takes 30% width minus some margin */
+    max-width: calc(30% - 3%); /* Ensures max width is also the same */
+    margin: 3%;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    background-color: #2e524a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   
+}
+
+.Research h2 {
+    color: #f8f8f8; /* Brighter color for more contrast */
+    margin-bottom: 10px;
+    font-weight: 600; /* Make the header bold */
+}
+
+.Research p {
+    color: #e0e0e0; /* Slightly brighter text color */
+    line-height: 1.6;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* You should define your image container as well with an order */
+.image-container2 {
+    flex-basis: calc(60% - 3%); /* Image takes 70% width minus some margin */
+    max-width: calc(60% - 3%); /* Ensures max width is also the same */
+    margin:3%; 
+    border-radius: 10px;
+    height: auto; /* Adjusts height to maintain aspect ratio */
+    overflow: hidden;
+    object-fit: cover;
+    border: 4px solid #311d18;
+}
+
+/*===============================================================================================================================================================================================
+============================================================================================================================================================================================v===============================================
+=============================================================================================================================================
+=============================================================================================================================================*/
+
+
+.paragraph3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+.The-Causes:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+.The-Causes {
+    margin: 3%;
+    flex-basis: calc(50% - 6%); /* Adjust for margin */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    background-color: #2e524a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for more depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /
+}
+
+.The-Causes h2 {
+    color: #f8f8f8; /* Brighter color for more contrast */
+    margin-bottom: 10px;
+    font-weight: 600; /* Make the header bold */
+}
+
+.The-Causes p {
+    color: #e0e0e0; /* Slightly brighter text color */
+    line-height: 1.6;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*===============================================================================================================================================================================================
+============================================================================================================================================================================================v===============================================
+=============================================================================================================================================
+=============================================================================================================================================*/
+
+footer{
+    background-color: #76453B;
+    border: #311d18 solid 2px;
+    text-align: center;
+    color: white;
+    
+}
